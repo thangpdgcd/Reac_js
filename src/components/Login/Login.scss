@@ -1,0 +1,101 @@
+.red {
+    border: 1px solid red;
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.yellow {
+    border: 1px solid yellow;
+}
+
+.black {
+    color: black;
+}
+
+// css-login
+.login-container {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding-top: 20px;
+
+    // col-5-right
+    .content-right {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+
+        // button-col-5-right-login
+        .login {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        // button-col-5-right-create-new
+        .Create-new {
+            background-color: rgb(66, 183, 42);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            width: 200px;
+            margin-left: 90px;
+            cursor: pointer;
+        }
+
+
+
+        .forgot {
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .forgot:hover {
+
+            text-decoration: underline;
+        }
+    }
+
+    // col-5-right
+    .content {
+        font-size: 15px;
+        margin-left: 580px;
+        margin-top: 30px;
+
+        .create-first {
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .create-first:hover {
+            text-decoration: underline;
+        }
+
+        .create-second {
+            margin-left: 5px;
+        }
+    }
+
+    .content-left {
+        .logo {
+            font-weight: bold;
+            font-size: 33px;
+            color: rgba(8, 102, 255);
+        }
+
+        .brand {
+            font-size: 25px;
+        }
+
+        .detail {
+            opacity: 0.8;
+        }
+    }
+
+
+
+}
