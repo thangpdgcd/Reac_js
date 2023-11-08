@@ -1,10 +1,9 @@
-
 import './Login.scss'
 const Login = (props) => {
     return (
         <div className="login-container">
             <div className="container mt-3">
-                <div className="row">
+                <div className="row px-3 px-sm-0">
                     <div className="content-left  col-7 ">
                         <div className='logo'>
                             facebook
@@ -22,11 +21,7 @@ const Login = (props) => {
                         <button className='btn btn-primary login_btn selected _51sy login'  >Log in</button>
                         <a className='text-center forgot'>Forgotten password?</a>
                         <hr />
-                        <button className='Create-new btn py-3 '>Create new account</button>
-
-                    </div>
-                    <div className='content d-flex'>
-                        <a href='' className='create-first black'>Create a Page</a> <span className='create-second black'>for a celebrity, brand or business.</span>
+                        <div className='text-center'> <button className='Create-new  btn btn-success py-3'>Create new account</button></div>
                     </div>
                 </div>
             </div>
