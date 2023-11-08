@@ -6,6 +6,8 @@ import {
   Route
 } from "react-router-dom";
 import Login from './components/Login/Login';
+import Register from './components/Register/register';
+
 const App = () => {
   return (
     <Router>
@@ -22,8 +24,11 @@ const App = () => {
             contact
           </Route>
           <Route path="/login">
-            <Login> Login</Login>
+            <Login />
           </Route>
+          <Router path="/register">
+            <Register />
+          </Router>
           <Route path="/" exact>
             home
           </Route>
