@@ -1,11 +1,18 @@
 import './Register.scss'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
-
+import axios from 'axios'
+import { useEffect } from 'react'
 const Register = (props) => {
     let history = useHistory();
     const handleLogin = () => {
         history.push("/login") //chuyển trang bắt sự kiện onlick dùng history
     }
+    useEffect(() => {
+        axios.get("https://reqres.in/api/users?page=2")
+            .then(function (data) {
+                console.log("check data", data);
+            })
+    }, [])
     return (
         <div className="register-container">
             <div className="container mt-3">
@@ -20,7 +27,6 @@ const Register = (props) => {
                         <div className='detail'>
                             Click your picture or add an account.
                         </div>
-
                     </div>
                     <div className="content-right green col-5 d-flex flex-column gap-3 py-3">
                         <div className='form-group'>
@@ -54,7 +60,6 @@ const Register = (props) => {
                             <input type='password' className="form-control" placeholder='Re-enter Password' ></input>
                         </div>
                         <button className='btn btn-primary login_btn selected _51sy login'  >Register</button>
-                        <a className='text-center forgot' >Forgotten password?</a>
                         <hr />
                         <div className='text-center'> <button className='Create-new  btn btn-success py-3' onClick={() => handleLogin()}> Already've an account .Login</button></div>
                     </div>

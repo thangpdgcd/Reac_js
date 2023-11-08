@@ -25,7 +25,7 @@ const Login = (props) => {
                         <input type='text' className="form-control" placeholder='Email address or phone number' ></input>
                         <input type='password' className="form-control" placeholder='Password'></input>
                         <button className='btn btn-primary login_btn selected _51sy login'  >Log in</button>
-                        <a className='text-center forgot'>Forgotten password?</a>
+                        <a href="/About" className='text-center forgot'>Forgotten password?</a>
                         <hr />
                         <div className='text-center'> <button className='Create-new  btn btn-success py-3' onClick={() => handleCreateNewAccout()}> Create new account</button></div>
                     </div>
