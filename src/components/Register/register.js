@@ -8,7 +8,7 @@ const Register = (props) => {
         history.push("/login") //chuyển trang bắt sự kiện onlick dùng history
     }
     useEffect(() => {
-        axios.get("https://reqres.in/api/users?page=2")
+        axios.get("http://localhost:5000/api/test-api")
             .then(function (data) {
                 console.log("check data", data);
             })
