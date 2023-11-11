@@ -1,3 +1,4 @@
+
 import './Register.scss'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import axios from 'axios'
@@ -8,9 +9,12 @@ const Register = (props) => {
         history.push("/login") //chuyển trang bắt sự kiện onlick dùng history
     }
     useEffect(() => {
-        axios.get("http://localhost:5000/api/test-api")
-            .then(function (data) {
+        axios.get("http://localhost:5000/api/test-api") //check data từ đường link http này
+            .then(data => {
                 console.log("check data", data);
+            })
+            .catch(err => {
+                console.log("Error", err);
             })
     }, [])
     return (

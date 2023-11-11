@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Login from './components/Login/Login';
-import Register from './components/Register/register';
+import Register from './components/Register/Register';
 
 const App = () => {
   return (
@@ -18,7 +18,6 @@ const App = () => {
             news
           </Route>
           <Route path="/about">
-            about
           </Route>
           <Route path="/contact">
             contact
