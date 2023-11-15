@@ -1,0 +1,77 @@
+.red {
+    border: 1px solid red;
+}
+
+.green {
+    border: 1px solid green;
+}
+
+.yellow {
+    border: 1px solid yellow;
+}
+
+.black {
+    color: black;
+}
+
+// css-login
+.register-container {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding-top: 20px;
+
+    // col-5-right
+    .content-right {
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        padding-bottom: 10px;
+
+        // button-col-5-right-login
+        .login {
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        // button-col-5-right-create-new
+        .Create-new {
+            background-color: rgb(66, 183, 42);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+
+        }
+
+        .forgot {
+            cursor: pointer;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .forgot:hover {
+
+            text-decoration: underline;
+        }
+    }
+
+    .content-left {
+        .logo {
+            font-weight: bold;
+            font-size: 33px;
+            color: rgba(8, 102, 255);
+        }
+
+        .brand {
+            font-size: 25px;
+        }
+
+        .detail {
+            opacity: 0.8;
+        }
+    }
+
+
+
+}
